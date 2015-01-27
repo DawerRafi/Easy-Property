@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	>
+
+	<ImageView
+		android:id="@+id/image"
+		android:layout_width="300dp"
+		android:layout_height="250dp"
+		android:layout_margin="5dp" 
+		android:contentDescription="icon"
+		 android:background="@android:color/background_light"
+		/>
+	
+	<TextView
+		android:id="@+id/title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium" 
+		/>
+
+</LinearLayout>

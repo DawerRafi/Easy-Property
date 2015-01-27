@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="24dp"
+            android:background="#344d59"
+            android:gravity="center"
+            android:text="Sign Up For EasyProperty"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/mybutton"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="Sign Up"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText10"
+            android:layout_alignBottom="@+id/editText10"
+            android:layout_alignParentLeft="true"
+            android:text="Address"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Number"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/viewbelowaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editText10"
+            android:layout_marginTop="55dp"
+            android:text="Name"
+            android:textSize="17sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editText11"
+            android:layout_marginTop="57dp"
+            android:text="Number"
+            android:textSize="17sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/editText10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Button01"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/viewbelowaddress"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    android:background="@android:color/darker_gray">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="91dp" 
+        android:background="@android:color/background_light">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="145dp"
+             >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="107dp"
+                android:layout_height="94dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@android:color/background_dark"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher"
+                  android:paddingLeft="6px"
+        android:paddingTop="4px"
+        android:paddingRight="8px"
+        android:paddingBottom="9px"
+         
+                />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"
+            android:text="Asad Ur Rehman"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" 
+                 android:textStyle="bold" />
+
+    </TableRow>
+ <ScrollView android:layout_width="match_parent"
+        		android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/background_light" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25dp" 
+            android:layout_marginTop="10dp"
+                  android:textColor="@android:color/black" 
+                 android:textStyle="bold" /> />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:text="03323234121"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" 
+               android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+             android:textSize="25dp"
+             android:layout_marginTop="10dp"
+                      android:textColor="@android:color/black" 
+                 android:textStyle="bold" /> />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mybutton"
+            android:text="Four"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+        
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Residential Address"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+             android:textSize="25dp"
+             android:layout_marginTop="10dp"
+                      android:textColor="@android:color/black" 
+                 android:textStyle="bold" /> />
+
+        <TextView
+            android:id="@+id/addressView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mybutton"
+            android:text="Four"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_weight="0.00"
+            android:text="Ratings"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="25dp" 
+             android:layout_marginTop="10dp"
+                     android:textColor="@android:color/black" 
+                 android:textStyle="bold" />/>
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="View_properties"
+                android:text="View Properties"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write Reviews"
+                android:onClick="Write" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read Reviews"
+                android:onClick="View" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

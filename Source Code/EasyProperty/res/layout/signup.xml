@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/AdressEdit"
+            android:layout_marginTop="20dp"
+            android:text="Password"
+            android:textSize="17sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="27dp"
+            android:text="Username"
+            android:textSize="17sp"
+            android:typeface="serif" 
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/viewbelowaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/add"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textSize="17sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/Name"
+            android:layout_below="@+id/pass"
+            android:layout_marginTop="20dp"
+            android:text="Confirm Password"
+            android:textSize="16sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/viewbelowaddress"
+            android:layout_below="@+id/NameEdit"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textSize="17sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/add"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_alignRight="@+id/postal"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/AdressEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Address"
+            android:layout_alignBottom="@+id/Address"
+            android:layout_alignLeft="@+id/editText3"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/NameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Name"
+            android:layout_alignBottom="@+id/Name"
+            android:layout_alignLeft="@+id/AdressEdit"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Number"
+            android:layout_alignLeft="@+id/editText2"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="#344d59"
+            android:gravity="center"
+            android:text="Sign Up For EasyProperty"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewbelowaddress"
+            android:layout_marginTop="20dp"
+            android:text="Number"
+            android:textSize="17sp"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Number"
+            android:layout_alignBottom="@+id/Number"
+            android:layout_toRightOf="@+id/add"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/postal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/viewbelowaddress"
+            android:layout_alignLeft="@+id/editText1"
+            android:ems="10"
+            android:inputType="textPostalAddress" />
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/mybutton"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="Sign Up"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="14dp"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText4"
+            android:layout_alignBottom="@+id/editText4"
+            android:layout_alignParentLeft="true"
+            android:text="Address" 
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

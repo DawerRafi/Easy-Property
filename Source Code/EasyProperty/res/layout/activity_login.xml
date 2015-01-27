@@ -1,0 +1,152 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity" >
+
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/login_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/login_progress_signing_in"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Login form -->
+
+    <AbsoluteLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/LLayout1"
+            style="@style/LoginFormContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@drawable/gradient"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" 
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/gradient"
+                android:ems="10"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="2"
+                android:password="true"
+                android:singleLine="true" />
+
+        </LinearLayout>
+           
+<RelativeLayout
+    android:id="@+id/RLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_x="0dip"
+    android:layout_y="170dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/darker_gray"
+                android:gravity="center_horizontal"
+                android:text="EasyProperty Android App will help you increase your reach to potential customers, Just fill out the form below and start posting advertisments to your properties"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="49dp"
+                android:background="#344d59"
+                android:gravity="center"
+                android:text="Not Registered as an Agent Yet? Register Today"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="110dp"
+                android:layout_height="33dp"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/mybutton"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="Sign Up"
+                android:textSize="13sp" 
+                android:onClick="SignButton"/>
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="110dp"
+                android:layout_height="33dp"
+                android:layout_alignLeft="@+id/Button01"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/mybutton"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:text="@string/action_sign_in_register"
+                android:textSize="13sp"
+                android:onClick="oc" />
+
+        </RelativeLayout>
+    </AbsoluteLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_marginBottom="100dp"
+        android:background="#344d59"
+        android:gravity="center_horizontal"
+        android:text="Easy Property Login"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal|bold" />
+
+</merge>

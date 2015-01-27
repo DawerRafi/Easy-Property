@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget32"
+    style="@style/AppTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<LinearLayout
+	android:id="@+id/widget33"
+	android:layout_width="match_parent"
+	android:layout_height="0dp"
+	android:background="@android:color/background_light"
+	android:orientation="vertical"
+	android:gravity="top"
+	android:layout_weight="3"
+	android:layout_gravity="top"
+	>
+
+<LinearLayout
+	android:id="@+id/widget44"
+	android:background="@android:color/background_light" 
+	android:layout_width="match_parent"
+	android:layout_height="40dp" >"
+	
+    <Spinner
+        android:id="@+id/spinner34"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/widget47"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:onClick="SearchButton"
+        android:text="Search" />
+
+</LinearLayout>
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:background="@android:color/background_dark"
+    android:src="@drawable/officebuilding2" />
+
+<TextView
+    android:id="@+id/widget48"
+    style="@style/tvSettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    
+    android:layout_marginTop="10dp"
+    android:background="@android:color/darker_gray"
+    android:gravity="center"
+    android:hint="Our Suggested Agents"
+    android:paddingTop="10dp"
+    android:text="Our Suggested Agents" />
+
+</LinearLayout>
+<ListView
+	android:id="@android:id/list"
+	android:layout_width="match_parent"
+	android:layout_height="0dp"
+	
+	android:layout_weight="2" />
+</LinearLayout>

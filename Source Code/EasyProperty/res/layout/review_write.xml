@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="24dp"
+            android:background="#344d59"
+            android:gravity="center"
+            android:text="Enter Review And Ratings"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:id="@+id/editText30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Button30"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:lines="3" />
+
+        <TextView
+            android:id="@+id/Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/editText30"
+            android:layout_marginTop="96dp"
+            android:text="Rating"
+            android:textSize="25sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText30"
+            android:layout_alignParentLeft="true"
+            android:text="Review"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/Button30"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="67dp"
+            android:background="@drawable/mybutton"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="Enter Review"
+            android:textSize="13sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Number"
+            android:layout_marginRight="19dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar1"
+            android:layout_marginTop="14dp"
+            android:layout_toLeftOf="@+id/textView2"
+            android:text="TextView" 
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

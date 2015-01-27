@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+            
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ScrollView android:layout_width="match_parent"
+        		android:layout_height="wrap_content">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <!-- Name Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Property Name"
+        android:textSize="17dip" />
+    
+    <!-- Input Name -->
+	<EditText android:id="@+id/inputName"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dip"
+	    android:layout_marginBottom="15dip"
+	    android:singleLine="true"/>
+	
+	<!-- Price Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/>
+    
+    <!-- Input Price -->
+	<EditText android:id="@+id/inputPrice" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dip"
+	    android:layout_marginBottom="15dip"
+	    android:singleLine="true"
+	    android:inputType="numberDecimal"/>
+	
+	<TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/>
+	       <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp" >
+	<CheckBox
+                        android:id="@+id/checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="77dp"
+                        android:layout_marginRight="20dp"
+                        android:onClick="Rent"
+                        android:text="Rent"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:onClick="Sale"
+                        android:text="Sale"
+                        android:textSize="15sp" />
+                    </LinearLayout>
+	
+	<!-- Description Label -->
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="No Of Bedrooms"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:layout_marginBottom="15dp"
+        android:textSize="17dip"/>
+    
+    <!-- Input description -->
+
+	<TableRow
+                android:id="@+id/widget175"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/RadioButton06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:onClick="onRadioButtonClicked1"
+                        android:text="1" />
+
+                    <RadioButton
+                        android:id="@+id/RadioButton05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:onClick="onRadioButtonClicked2"
+                        android:text="2" />
+
+                    <RadioButton
+                        android:id="@+id/RadioButton04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:onClick="onRadioButtonClicked3"
+                        android:text="3" />
+
+                    <RadioButton
+                        android:id="@+id/RadioButton02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:onClick="onRadioButtonClicked4"
+                        android:text="4" />
+
+                    <RadioButton
+                        android:id="@+id/RadioButton03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:onClick="onRadioButtonClicked5"
+                        android:text="5" />
+                </RadioGroup>
+            </TableRow>
+
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dip"
+	    android:paddingRight="10dip"
+	    android:paddingTop="10dip"
+	    android:text="No Of BathRooms"
+	    android:textSize="17dip"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="15dp" />
+
+	<TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/RadioButton10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:onClick="onRadioButtonClicked6"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:onClick="onRadioButtonClicked7"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:onClick="onRadioButtonClicked8"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:onClick="onRadioButtonClicked9"
+                            android:text="4" />
+
+                        <RadioButton
+                            android:id="@+id/RadioButton14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:onClick="onRadioButtonClicked10"
+                            android:text="5" />
+                    </RadioGroup>
+                </LinearLayout>
+            </TableRow>
+
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dip"
+	    android:paddingRight="10dip"
+	    android:paddingTop="10dip"
+	    android:text="Description"
+	    android:textSize="17dip"
+	    android:layout_marginTop="10dp" />
+	<EditText
+	    android:id="@+id/description"
+	    android:layout_width="fill_parent"
+	    android:layout_height="41dp"
+	    android:layout_margin="5dip"
+	    android:layout_marginBottom="15dip"
+	    android:ems="10"
+	    android:gravity="top"
+	    android:lines="4" />
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dip"
+	    android:paddingRight="10dip"
+	    android:paddingTop="10dip"
+	    android:text="Area"
+	    android:textSize="17dip" />
+	<EditText
+	    android:id="@+id/area"
+	    android:layout_width="fill_parent"
+	    android:layout_height="41dp"
+	    android:layout_margin="5dip"
+	    android:layout_marginBottom="15dip"
+	    android:ems="10"
+	    android:gravity="top"
+	    android:lines="4" />
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="10dip"
+	    android:paddingRight="10dip"
+	    android:paddingTop="10dip"
+	    android:text="Size"
+	    android:textSize="17dip" />
+	<EditText
+	    android:id="@+id/size"
+	    android:layout_width="fill_parent"
+	    android:layout_height="41dp"
+	    android:layout_margin="5dip"
+	    android:layout_marginBottom="15dip"
+	    android:ems="10"
+	    android:gravity="top"
+	    android:lines="4" />
+	 
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	      android:background="@drawable/mybutton">
+	    <!-- Button Create Product -->
+	<Button android:id="@+id/btnSave" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Save Changes"
+	    android:layout_weight="1"
+	      android:background="@drawable/mmybutton"
+	      android:onClick="btnSave"/>
+	
+	<!-- Button Create Product -->	    
+	</LinearLayout>
+	
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
